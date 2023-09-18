@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dois NUmeros</title>
+</head>
+<body>
+    <div>
+        <h1>Dois numeros</h1>
+        <script>
+           numero1 = parseInt(prompt("1. Insira um numero: "));
+           numero2 = parseInt(prompt("2. Insira um numero maior que primeiro: "));
+
+           if(numero2 == numero1 || numero2 < 0){
+            numero2 = parseInt(prompt("2. ATENÇÃO: Insira um numero maior que o primeiro digitado: "));
+            document.write("<h1> A divisao é igual a " + numero1 / numero2 + "</h1>");
+
+            media = numero1 + numero2 / 2;
+            document.write("<h1> A media dos dois numero é " + media + "</h1>");
+            document.write("<h1> Numeros inteiros entre eles :</h1>");
+
+            for (let i = numero1; i <= numero2; i++) {
+                document.write("<h1>" + i + "</h1>");
+                }
+
+           }else{
+           
+
+            media = numero1 + numero2 / 2;
+            document.write("<h1> A media dos dois numero é " + media + "</h1>");
+            document.write("<h1> Numeros inteiros entre eles :</h1>");
+
+            for (let i = numero1; i <= numero2; i++) {
+                document.write("<h1>" + i + "</h1>");
+                }
+
+           }
+        </script>
+    </div>
+</body>
+</html>

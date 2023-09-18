@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprovados</title>
+</head>
+
+<body>
+    <div>
+        <h1>Aprovados</h1>
+        <script>
+            let alunosAprovados = 0;
+
+            do {
+                const nota1 = parseFloat(prompt("1. Insira a primeira nota: "));
+                const nota2 = parseFloat(prompt("2. Insira a segunda nota: "));
+
+                const media = (nota1 + nota2) / 2;
+
+                if (media >= 9.5) {
+                    alunosAprovados += 1;
+                    alert("Aluno aprovado! Média: " + media);
+                } else {
+                    alert("Aluno reprovado! Média: " + media);
+                }
+
+                let continuar = prompt("Calcular a média de outro aluno? (S/N)").toUpperCase();
+                if (continuar !== "S") {
+                    break;
+                }
+            } while (true);
+
+            document.write("A quantidade de alunos aprovados é de: " + alunosAprovados);
+        </script>
+    </div>
+</body>
+
+</html>

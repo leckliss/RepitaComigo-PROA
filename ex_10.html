@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuada do 1 a N</title>
+</head>
+
+<body>
+    <div>
+        <h1>Tabuada do 1 a N</h1>
+        <script>
+            let numero = parseInt(prompt("Digite até qual número deseja calcular as tabuadas: "));
+
+            for (let i = 1; i <= numero; i++) {
+                document.write("<h2>Tabuada do " + i + ":</h2>");
+
+                for (let j = 1; j <= 10; j++) {
+                    document.write(i + " X " + j +" = " + i * j + " <br>");
+                }
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre 24 e 42</title>
+</head>
+<body>
+    <div>
+        <h1>Quantos estão entre 24 e 42?</h1>
+        <script>
+        
+            let entre= 0;
+            let fora= 0;
+            for (let i = 1; i <= 10; i++) {
+                numero = parseInt(prompt(i +". Digite um numero: "))
+
+                if(numero >= 24 && numero <= 42){
+                    entre++;
+                }else{
+                    fora++;
+                }
+            }
+            document.write("<h1>Total de numero digitados que estão entre 24 e 42: " + entre + " </h1>");
+            document.write("<h1>Total de numero digitados que NÃO estão entre 24 e 42: " + fora + " </h1>");
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisao</title>
+</head>
+<body>
+    <div>
+        <h1>Divisao</h1>
+        <script>
+           numero1 = parseInt(prompt("1. Insira um numero: "));
+           numero2 = parseInt(prompt("2. Insira um numero maior que 0: "));
+
+           if(numero2 == 0 || numero2 < 0){
+            numero2 = parseInt(prompt("2. ATENÇÃO: Insira um numero maior que 0: "));
+            document.write("<h1> A divisao é igual a " + numero1 / numero2 + "</h1>");
+           }else{
+           document.write("<h1> A divisao é igual a " + numero1 / numero2 + "</h1>");
+            }
+        </script>
+    </div>
+</body>
+</html>

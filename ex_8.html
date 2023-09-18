@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0 a N</title>
+</head>
+<body>
+    <div>
+        <h1>0 a N</h1>
+        <script>
+            let numero;
+        
+            do {
+                numero = parseInt(prompt("Insira um número maior que 1: "));
+            } while (numero <= 1);
+        
+            document.write("<h1>Números entre 0 e " + numero + ":</h1>");
+        
+            for (let i = 0; i <= numero; i++) {
+                document.write(i + "<br>");
+            }
+        </script>
+    </div>
+</body>
+</html>

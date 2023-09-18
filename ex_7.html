@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Aluno</title>
+</head>
+
+<body>
+    <div>
+        <h1>Notas</h1>
+        <script>
+            
+            let somaNotas = 0;
+
+            document.write("<h2>Calculadora de Média do Aluno</h2>");
+            
+
+            for (let i = 1; i <= 6; i++) {
+                let nota;
+
+                do {
+                    nota = parseFloat(prompt(`Digite a nota ${i}:`));
+
+                    if (nota < 0 || nota > 10) {
+                        alert("A nota inserida é inválida. Digite uma nota entre 0 e 10.");
+                    }
+                } while (nota < 0 || nota > 10);
+
+                somaNotas += nota;
+            }
+
+            const media = somaNotas / totalNotas;
+            document.write(`A média do aluno é: ${media.toFixed(2)}`);
+
+        </script>
+    </div>
+</body>
+
+</html>
